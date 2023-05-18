@@ -18,7 +18,7 @@
         "responses": {}
       }
     },
-    "/contacts/": {
+    "/vehicles/": {
       "get": {
         "description": "",
         "produces": [
@@ -75,7 +75,7 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/vehicles/{id}": {
       "get": {
         "description": "",
         "produces": [
