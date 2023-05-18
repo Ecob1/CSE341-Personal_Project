@@ -1,0 +1,25 @@
+{
+  "Model": {
+    "Model": "Subaru Cross Trek",
+    "Year": "2014",
+    "RimSize": "16",
+    "Color": "Gray",
+    "EngineSize": "2.5i",
+    "Condition": "Excellent",
+    "Value":"13,000"
+  },
+  "Model": {
+    "Model": " Ford Expedition xl",
+    "Year": "2018",
+    "RimSize": "18",
+    "Color": "Black",
+    "EngineSize": "5.4"
+  },
+  "Model": {
+    "Model": " Toyota Camry ",
+    "Year": "2022",
+    "RimSize": "17",
+    "Color": "Red",
+    "EngineSize": "2.5i"
+  }
+}
