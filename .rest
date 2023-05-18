@@ -29,11 +29,13 @@ POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Lupe",
-    "lastName": "Cobian",
-    "email": "email",
-    "favoriteColor": "Red",
-    "birthday": "04/03/2001"
+    "Model": "Subaru Cross Trek",
+    "Year": "2014",
+    "RimSize": "16",
+    "Color": "Gray",
+    "EngineSize": "2.5i",
+    "Condition": "Excellent",
+    "Value":"13,000"
 }
 
 ###
