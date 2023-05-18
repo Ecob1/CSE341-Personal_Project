@@ -40,19 +40,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "Model": {
                   "example": "any"
                 },
-                "lastName": {
+                "Year": {
                   "example": "any"
                 },
-                "email": {
+                "RimSize": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "Color": {
                   "example": "any"
                 },
-                "birthday": {
+                "EngineSize": {
+                  "example": "any"
+                },
+                "Condition": {
+                  "example": "any"
+                },
+                "Value": {
                   "example": "any"
                 }
               }
@@ -104,19 +110,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "Model": {
                   "example": "any"
                 },
-                "lastName": {
+                "Year": {
                   "example": "any"
                 },
-                "email": {
+                "RimSize": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "Color": {
                   "example": "any"
                 },
-                "birthday": {
+                "EngineSize": {
+                  "example": "any"
+                },
+                "Condition": {
+                  "example": "any"
+                },
+                "Value": {
                   "example": "any"
                 }
               }

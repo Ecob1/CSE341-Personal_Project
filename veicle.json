@@ -13,13 +13,17 @@
     "Year": "2018",
     "RimSize": "18",
     "Color": "Black",
-    "EngineSize": "5.4"
+    "EngineSize": "5.4",
+    "Condition": "Poor",
+    "Value": "6,000"
   },
   "Model": {
     "Model": " Toyota Camry ",
     "Year": "2022",
     "RimSize": "17",
     "Color": "Red",
-    "EngineSize": "2.5i"
+    "EngineSize": "2.5i",
+    "Condition": "Good",
+    "Value": "10,000"
   }
 }
