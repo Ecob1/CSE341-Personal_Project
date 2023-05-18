@@ -35,14 +35,7 @@ const createVehicle = async (req, res) => {
     Condition: req.body.Condition,
     Value: req.body.Value,
   };
-
-  // "Model": "Subaru Cross Trek",
-  //   "Year": "2014",
-  //   "RimSize": "16",
-  //   "Color": "Gray",
-  //   "EngineSize": "2.5i",
-  //   "Condition": "Excellent",
-  //   "Value":"13,000"
+  
   const response = await mongodb
     .getDb()
     .db("Guero")
