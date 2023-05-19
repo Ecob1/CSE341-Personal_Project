@@ -79,11 +79,13 @@ PUT https://edgar-y7p9.onrender.com/contacts/6456cd33c122b4525ba211db HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Angel",
-    "lastName": "Olmedo",
-    "email": "email",
-    "favoriteColor": "blue",
-    "birthday": "04/03/2001"
+    "Model": "Nissan Altima",
+    "Year": "2023",
+    "RimSize": "16",
+    "Color": "White",
+    "EngineSize": "2.5i",
+    "Condition": "Excellent",
+    "Value":"36,000"
 }
 
 ###
