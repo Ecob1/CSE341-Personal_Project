@@ -1,13 +1,13 @@
 GET http://localhost:3000/vehicle HTTP/1.1
 
 ###
-GET http://localhost:3000/contacts/644c7baf2d216b2c35f77681 HTTP/1.1
+GET http://localhost:3000/vehicle/644c7baf2d216b2c35f77681 HTTP/1.1
 
 ###
-GET http://localhost:3000/contacts/644c7c1d2d216b2c35f77683 HTTP/1.1
+GET http://localhost:3000/vehicle/644c7c1d2d216b2c35f77683 HTTP/1.1
 
 ###
-GET http://localhost:3000/contacts/644c7c362d216b2c35f77684 HTTP/1.1
+GET http://localhost:3000/vehicle/644c7c362d216b2c35f77684 HTTP/1.1
 
 ###
 GET https://edgar-y7p9.onrender.com/awesome HTTP/1.1
@@ -39,7 +39,7 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:3000/contacts/645586643d66c4e2c2cd43e8 HTTP/1.1
+PUT http://localhost:3000/vedhicle/645586643d66c4e2c2cd43e8 HTTP/1.1
 content-type: application/json
 
 {
