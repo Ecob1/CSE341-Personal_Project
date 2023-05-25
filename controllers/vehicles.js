@@ -3,7 +3,6 @@ const ObjectId = require("mongodb").ObjectId;
 // Creating a function to get all the contacts.
 const getAll = async (req, res, next) => {
   const result = await mongodb.getDb().db("Guero").collection("cars").find();
-
   result.toArray().then((lists) => {
     console.log(lists);
     res.setHeader("Content-Type", "application/json");
@@ -35,7 +34,7 @@ const createVehicle = async (req, res) => {
     Condition: req.body.Condition,
     Value: req.body.Value,
   };
-  
+
   const response = await mongodb
     .getDb()
     .db("Guero")
@@ -50,33 +49,38 @@ const createVehicle = async (req, res) => {
         response.error || "Some error occurred while creating the contact."
       );
   }
+  f;
 };
 
 const updateVehicle = async (req, res) => {
-  const userId = new ObjectId(req.params.id);
-  // be aware of updateOne if you only want to update specific fields
-  const contact = {
-    Model: req.body.Model,
-    Year: req.body.Year,
-    RimSize: req.body.RimSize,
-    Color: req.body.Color,
-    EngineSize: req.body.EngineSize,
-    Condition: req.body.Condition,
-    Value: req.body.Value,
-  };
-  const response = await mongodb
-    .getDb()
-    .db("Guero")
-    .collection("cars")
-    .replaceOne({_id: userId}, contact);
-  if (response.acknowledged) {
-    res.status(204).send();
-  } else {
-    res
-      .status(500)
-      .json(
-        response.error || "Some error occurred while updating the contact."
-      );
+  try {
+    const userId = new ObjectId(req.params.id);
+    // be aware of updateOne if you only want to update specific fields
+    const contact = {
+      Model: req.body.Model,
+      Year: req.body.Year,
+      RimSize: req.body.RimSize,
+      Color: req.body.Color,
+      EngineSize: req.body.EngineSize,
+      Condition: req.body.Condition,
+      Value: req.body.Value,
+    };
+    const response = await mongodb
+      .getDb()
+      .db("Guero")
+      .collection("cars")
+      .replaceOne({_id: userId}, contact);
+    if (response.acknowledged) {
+      res.status(204).send();
+    } else {
+      res
+        .status(500)
+        .json(
+          response.error || "Some error occurred while updating the contact."
+        );
+    }
+  } catch (err) {
+    res.status(500).json(err);
   }
 };
 

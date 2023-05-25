@@ -18,7 +18,7 @@
         "responses": {}
       }
     },
-    "/vehicles/": {
+    "/vehicle/": {
       "get": {
         "description": "",
         "produces": [
@@ -75,7 +75,7 @@
         }
       }
     },
-    "/vehicles/{id}": {
+    "/vehicle/{id}": {
       "get": {
         "description": "",
         "produces": [
