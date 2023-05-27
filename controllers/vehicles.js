@@ -63,7 +63,6 @@ const createVehicle = async (req, res) => {
       Condition: req.body.Condition,
       Value: req.body.Value,
     };
-
     const response = await mongodb
       .getDb()
       .db("Guero")
@@ -87,7 +86,6 @@ const createVehicle = async (req, res) => {
 const updateVehicle = async (req, res) => {
   try {
     validVehicleData(req.body);
-
     const userId = new ObjectId(req.params.id);
     // be aware of updateOne if you only want to update specific fields
     const vehicle = {
@@ -99,7 +97,6 @@ const updateVehicle = async (req, res) => {
       Condition: req.body.Condition,
       Value: req.body.Value,
     };
-
     const response = await mongodb
       .getDb()
       .db("Guero")
