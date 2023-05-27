@@ -29,7 +29,7 @@ POST http://localhost:3000/vehicle HTTP/1.1
 content-type: application/json
 
 {
-    "Model": "Chevrolet Colorado",
+    "Model": "rosado",
     "Year": "2014",
     "RimSize": "18",
     "Color": "Black",
@@ -92,5 +92,5 @@ content-type: application/json
 
 ###
 // Deleting a contact that returns a 200 status
-DELETE  https://edgar-y7p9.onrender.com/vehicle/6456cd33c122b4525ba211db HTTP/1.1
+DELETE  https://edgar-y7p9.onrender.com/vehicle/646839bb260d71c15c03b269 HTTP/1.1
 
