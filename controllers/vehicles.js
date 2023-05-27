@@ -17,7 +17,7 @@ const validVehicleData = (data) => {
     throw new Error("Make sure all required fields are fill out.");
   }
   if (!validateModels.includes(Model)) {
-    throw new Error("Invalid car model needs to be a Toyota or Ford");
+    throw new Error("Invalid car the model needs to be a Toyota or Ford only.");
   }
 };
 
