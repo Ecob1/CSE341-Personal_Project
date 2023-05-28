@@ -30,6 +30,7 @@ const getAll = async (req, res, next) => {
     res.status(200).json(lists);
   });
 };
+
 // Creating a function to get a single vehicle.
 const getSingle = async (req, res, next) => {
   try {
@@ -119,6 +120,7 @@ const updateVehicle = async (req, res) => {
   }
 };
 
+// This function is to delete vehicle
 const deleteVehicle = async (req, res, next) => {
   try {
     const userId = new ObjectId(req.params.id);
