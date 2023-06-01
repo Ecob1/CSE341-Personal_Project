@@ -1,6 +1,12 @@
 const mongodb = require("../db/connect");
 const ObjectId = require("mongodb").ObjectId;
-
+function isAuthenticated(req, res, next) {
+  // if (req.session.token) {
+  //   next();
+  // } else {
+  //   res.redirect("/auth");
+  // }
+}
 // Creating a function to create a vehicle.
 const validateModels = ["Toyota", "Ford"];
 const validVehicleData = (data) => {
@@ -23,6 +29,7 @@ const validVehicleData = (data) => {
 
 // Creating a function to get all the vehicles.
 const getAll = async (req, res, next) => {
+  isAuthenticated(req, res);
   const result = await mongodb.getDb().db("Guero").collection("cars").find();
   result.toArray().then((lists) => {
     console.log(lists);
@@ -70,6 +77,10 @@ const createVehicle = async (req, res) => {
       .collection("cars")
       .insertOne(vehicle);
 
+    // If vehicle not created error will show.
+    if (!response) {
+      res.status(500).json({message: "Vehicle not created."});
+    }
     if (response.acknowledged) {
       res.status(201).json(response);
     } else {
