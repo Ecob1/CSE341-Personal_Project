@@ -1,0 +1,36 @@
+{
+    "Model": {
+      "City":"Reno",
+      "Model": "Subaru Cross Trek",
+      "Year": "2014",
+      "RimSize": "16",
+      "Color": "Gray",
+      "EngineSize": "2.5i",
+      "Condition": "New",
+      "Value":"34,000",
+      "Quantity":"30"
+    },
+    "Model": {
+      "City":"Salt lake",
+      "Model": "Ford Taurus",
+      "Year": "2013",
+      "RimSize": "18",
+      "Color": "Black",
+      "EngineSize": "5.4",
+      "Condition": "New",
+      "Value": "34,000",
+      "Quantity":"23"
+    },
+    "Model": {
+        "City":"Elko",
+      "Model": "Toyota",
+      "Year": "2022",
+      "RimSize": "17",
+      "Color": "Red",
+      "EngineSize": "2.5i",
+      "Condition": "New",
+      "Value": "64,000",
+      "Quantity":"40"
+    }
+  }
+  
