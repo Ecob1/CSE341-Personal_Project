@@ -44,7 +44,7 @@ app.get("/callback", ({query: {code}}, res) => {
 });
 
 app.get("/logout", (req, res) => {
-  // add logout ficture later
+  // add logout fixture later
   // req.session.token = null;
   res.redirect("/");
 });
