@@ -1,17 +1,27 @@
 const express = require("express");
 
 const router = express.Router();
-
+function isAuthenticated(req, res, next) {
+  try {
+    if (req.session.token) {
+      next();
+    } else {
+      throw new Error("Please login");
+    }
+  } catch (error) {
+    res.status(400).json({message: "Please login"});
+  }
+}
 const contactDealer = require("../controllers/carSale");
 
-router.get("/", contactDealer.getAllCar);
+router.get("/", isAuthenticated, contactDealer.getAllCar);
 
-router.get("/:id", contactDealer.getSingleCar);
+router.get("/:id", isAuthenticated, contactDealer.getSingleCar);
 
-router.post("/", contactDealer.createCarSales);
+router.post("/", isAuthenticated, contactDealer.createCarSales);
 
-router.put("/:id", contactDealer.updateCarSales);
+router.put("/:id", isAuthenticated, contactDealer.updateCarSales);
 
-router.delete("/:id", contactDealer.deleteCarSales);
+router.delete("/:id", isAuthenticated, contactDealer.deleteCarSales);
 
 module.exports = router;

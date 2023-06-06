@@ -40,13 +40,11 @@ app.get("/callback", (req, res) => {
   axios
     .post("https://github.com/login/oauth/access_token", body, opts)
     .then((_res) => {
-      console.log(_res.data);
       req.session.token = _res.data.access_token;
       // Log the entire response object to check what's being received      console.log(_res.data);
       return _res.data.access_token;
     })
     .then((token) => {
-      // console.log(_res);
       console.log("My token:", token);
 
       res.redirect(`/api-docs`);

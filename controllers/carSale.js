@@ -12,7 +12,7 @@ const validCarSalesData = (data) => {
     !Color ||
     !EngineSize ||
     !Condition ||
-    !Value || 
+    !Value ||
     !Quantity
   ) {
     throw new Error("Make sure all required fields are fill out.");
@@ -61,14 +61,14 @@ const createCarSales = async (req, res) => {
   try {
     validCarSalesData(req.body);
     const carInventory = {
+      BuyerName: req.body.BuyerName,
+      BuyerPhoneNumber: req.body.BuyerPhoneNumber,
       Model: req.body.Model,
       Year: req.body.Year,
-      RimSize: req.body.RimSize,
       Color: req.body.Color,
-      EngineSize: req.body.EngineSize,
-      Condition: req.body.Condition,
       Value: req.body.Value,
       Quantity: req.body.Quantity,
+      VimNumber: req.body.VimNumber,
     };
     const response = await mongodb
       .getDb()
@@ -100,14 +100,14 @@ const updateCarSales = async (req, res) => {
     const userId = new ObjectId(req.params.id);
     // be aware of updateOne if you only want to update specific fields
     const carInventory = {
+      BuyerName: req.body.BuyerName,
+      BuyerPhoneNumber: req.body.BuyerPhoneNumber,
       Model: req.body.Model,
       Year: req.body.Year,
-      RimSize: req.body.RimSize,
       Color: req.body.Color,
-      EngineSize: req.body.EngineSize,
-      Condition: req.body.Condition,
       Value: req.body.Value,
       Quantity: req.body.Quantity,
+      VimNumber: req.body.VimNumber,
     };
     const response = await mongodb
       .getDb()
