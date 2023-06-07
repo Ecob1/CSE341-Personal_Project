@@ -8,7 +8,7 @@
     "Color": "Gray",
     "Value": "34,000",
     "Quantity": "4",
-    "VimNumber": "8V087543FG5533"
+    "VimNumber": "8V087543FG5533A"
   },
   "Model": {
     "BuyerName": "Marianne Dahl",
@@ -19,7 +19,7 @@
     "Color": "Black",
     "Value": "34,000",
     "Quantity": "10",
-    "VimNumber": "8V087543PM5533"
+    "VimNumber": "8V087543PM5533A"
   },
   "Model": {
     "BuyerName": "Clarissa Fisher",
@@ -30,6 +30,6 @@
     "Color": "Red",
     "Value": "64,000",
     "Quantity": "24",
-    "VimNumber": "8V087543TR5533"
+    "VimNumber": "8V087543TR5533A"
   }
 }
