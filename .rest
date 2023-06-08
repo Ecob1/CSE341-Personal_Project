@@ -94,3 +94,42 @@ content-type: application/json
 // Deleting a contact that returns a 200 status
 DELETE  https://edgar-y7p9.onrender.com/vehicle/64717415e369517db32af4f2 HTTP/1.1
 
+# car sales
+
+###
+GET https://edgar-y7p9.onrender.com/carSale HTTP/1.1
+
+###
+// Creating new contacts that returns the ID of the new contact and a 201 status.
+POST https://edgar-y7p9.onrender.com/carSale HTTP/1.1
+content-type: application/json
+
+{
+    "Model": "Subaru Cross Trek",
+    "Year": "2014",
+    "RimSize": "16",
+    "Color": "Gray",
+    "EngineSize": "2.5i",
+    "Condition": "Excellent",
+    "Value":"13,000"
+}
+
+###
+// Replacing a new contact and returning a 204 status.
+PUT https://edgar-y7p9.onrender.com/carSale/6456cd33c122b4525ba211db HTTP/1.1
+content-type: application/json
+
+{
+    "Model": "Nissan Altima",
+    "Year": "2023",
+    "RimSize": "16",
+    "Color": "White",
+    "EngineSize": "2.5i",
+    "Condition": "Excellent",
+    "Value":"36,000"
+}
+
+###
+// Deleting a contact that returns a 200 status
+DELETE  https://edgar-y7p9.onrender.com/carSale/64717415e369517db32af4f2 HTTP/1.1
+
