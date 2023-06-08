@@ -195,6 +195,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
@@ -207,28 +210,31 @@
             "schema": {
               "type": "object",
               "properties": {
+                "BuyerName": {
+                  "example": "any"
+                },
+                "BuyerPhoneNumber": {
+                  "example": "any"
+                },
                 "Model": {
+                  "example": "any"
+                },
+                "City": {
                   "example": "any"
                 },
                 "Year": {
                   "example": "any"
                 },
-                "RimSize": {
-                  "example": "any"
-                },
                 "Color": {
-                  "example": "any"
-                },
-                "EngineSize": {
-                  "example": "any"
-                },
-                "Condition": {
                   "example": "any"
                 },
                 "Value": {
                   "example": "any"
                 },
                 "Quantity": {
+                  "example": "any"
+                },
+                "VimNumber": {
                   "example": "any"
                 }
               }
@@ -289,28 +295,31 @@
             "schema": {
               "type": "object",
               "properties": {
+                "BuyerName": {
+                  "example": "any"
+                },
+                "BuyerPhoneNumber": {
+                  "example": "any"
+                },
                 "Model": {
+                  "example": "any"
+                },
+                "City": {
                   "example": "any"
                 },
                 "Year": {
                   "example": "any"
                 },
-                "RimSize": {
-                  "example": "any"
-                },
                 "Color": {
-                  "example": "any"
-                },
-                "EngineSize": {
-                  "example": "any"
-                },
-                "Condition": {
                   "example": "any"
                 },
                 "Value": {
                   "example": "any"
                 },
                 "Quantity": {
+                  "example": "any"
+                },
+                "VimNumber": {
                   "example": "any"
                 }
               }
@@ -345,6 +354,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "404": {
             "description": "Not Found"

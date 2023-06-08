@@ -4,16 +4,27 @@ const ObjectId = require("mongodb").ObjectId;
 // Creating a function to create a car sales.
 const validateModels = ["Toyota", "Ford"];
 const validCarSalesData = (data) => {
-  const {Model, Year, RimSize, Color, EngineSize, Condition, Value} = data;
+  const {
+    BuyerName,
+    BuyerPhoneNumber,
+    Model,
+    City,
+    Year,
+    Color,
+    Value,
+    Quantity,
+    VimNumber,
+  } = data;
   if (
+    !BuyerName ||
+    !BuyerPhoneNumber ||
     !Model ||
+    !City ||
     !Year ||
-    !RimSize ||
     !Color ||
-    !EngineSize ||
-    !Condition ||
     !Value ||
-    !Quantity
+    !Quantity ||
+    !VimNumber
   ) {
     throw new Error("Make sure all required fields are fill out.");
   }
