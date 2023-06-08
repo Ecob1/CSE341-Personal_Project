@@ -23,7 +23,7 @@ app
   })
   .use("/", require("./routes"));
 
-app.get("/auth", (req, res) => {
+app.get("/login", (req, res) => {
   res.redirect(
     `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}&prompt=consent`
   );
