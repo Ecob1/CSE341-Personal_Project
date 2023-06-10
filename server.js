@@ -46,7 +46,6 @@ app.get("/callback", (req, res) => {
     })
     .then((token) => {
       console.log("My token:", token);
-
       res.redirect(`/api-docs`);
     })
     .catch((err) => res.status(500).json({err: err.message}));
