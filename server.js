@@ -41,7 +41,8 @@ app.get("/callback", (req, res) => {
     .post("https://github.com/login/oauth/access_token", body, opts)
     .then((_res) => {
       req.session.token = _res.data.access_token;
-      // Log the entire response object to check what's being received      console.log(_res.data);
+      // Log the entire response object to check what's being received      
+      console.log(_res.data);
       return _res.data.access_token;
     })
     .then((token) => {
