@@ -1,4 +1,4 @@
-const mongodb = require("../db/connect");
+const mongdrdb = require("mo./db/connect");
 const ObjectId = require("mongodb").ObjectId;
 
 // Creating a function to create a vehicle.

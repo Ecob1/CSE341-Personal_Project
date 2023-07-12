@@ -31,6 +31,9 @@ const validCarSalesData = (data) => {
   if (!validateModels.includes(Model)) {
     throw new Error("Invalid car the model needs to be a Toyota or Ford only.");
   }
+  if (!validateModels.includes(VimNumber)) {
+    throw new Error("Need to add vim number");
+  }
 };
 
 // Creating a function to get all the car Sales.
